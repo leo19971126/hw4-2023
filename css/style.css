@@ -10,7 +10,6 @@ a.skip{
   left: -400px;
 }
 
-
   /* Requirement 2 code here -- Do not remove this comment. */
 
 nav a:focus{
@@ -20,99 +19,84 @@ nav a:focus{
   outline: none;
 }
 
-
-@media screen and (max-width: 767px){
-  /* Requirement 3 code here -- Do not remove this comment. */
-  .container{
-    display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
-    row-gap: 30px;
-  }
-
-  /* Requirement 4 code here -- Do not remove this comment. */
-
-  .intro {
-    background: #858585 url("../images/header.jpg") no-repeat center fixed;
-    background-size: cover;
-    min-height: 400px;
-    /* background-attachment: fixed;
-    background-position: center; */
-  }
-
-  /* Requirement 5 code here -- Do not remove this comment. */
-
-  .about,
-  .clients,
-  .method,
-  .contact {
-    grid-column: 2 / 3;
-  }
-
-  /* Requirement 6 code here -- Do not remove this comment. */
-
-  img {
-    width: 100%;
-    /* max-width: 100%;
-    height: auto; */
-  }
-
-  /* Requirement 7 code here -- Do not remove this comment. */
-
-  .about-image,
-  .clients-image,
-  .method-image,
-  .contact-image {
-    grid-column: 1 / 4;
-    max-height: 500px;
-  }
-
-  /* Requirement 8 code here -- Do not remove this comment. */
-
-  .about,
-  .about-image {
-    /* display: flex; */
-    /* grid-row: 1; */
-    grid-row: 1 / 2;
-
-  }
-
-  .clients,
-  .clients-image {
-    /* grid-row: 2; */
-    grid-row: 2 / 3;
-
-  }
-
-  .method,
-  .method-image {
-    /* grid-row: 3; */
-    grid-row: 3 / 4;
-
-  }
-
-  .contact,
-  .contact-image {
-    /* grid-row: 4; */
-    grid-row: 4 / 5;
-
-  }
-
-  /* Requirement 9 code here -- Do not remove this comment. */
-
-  .text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-height: 40vh;
-    overflow-y: auto;
-  }
-
-  /* .text h2{
-    display: flex;
-    justify-content: baseline;
-    align-items: center;
-  } */
+/* Requirement 3 code here -- Do not remove this comment. */
+.container{
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  /* grid-template-rows: auto; */
+  row-gap: 30px;
 }
+
+/* Requirement 4 code here -- Do not remove this comment. */
+.intro {
+  background: #858585 url("../images/header.jpg") no-repeat center fixed;
+  background-size: cover;
+  min-height: 400px;
+  /* background-attachment: fixed;
+  background-position: center; */
+}
+
+/* Requirement 5 code here -- Do not remove this comment. */
+.about,
+.clients,
+.method,
+.contact {
+  grid-column: 2;
+}
+
+/* Requirement 6 code here -- Do not remove this comment. */
+
+img {
+  width: 100%;
+}
+
+/* Requirement 7 code here -- Do not remove this comment. */
+
+.about-image,
+.clients-image,
+.method-image,
+.contact-image {
+  grid-column: 1 / span 3;
+  max-height: 500px;
+}
+
+/* Requirement 8 code here -- Do not remove this comment. */
+
+.about,
+.about-image {
+  grid-row: 1;
+}
+
+.clients,
+.clients-image {
+  grid-row: 2;
+}
+
+.method,
+.method-image {
+  grid-row: 3;
+}
+
+.contact,
+.contact-image {
+  grid-row: 4;
+}
+
+/* Requirement 9 code here -- Do not remove this comment. */
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 40vh;
+  overflow: auto;
+}
+
+/* .text h2{
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+} */
 
   /*Add the media query here.  Make sure to */
 
@@ -145,8 +129,6 @@ nav a:focus{
     display: grid;
     grid-template-columns: 50px auto 500px auto 50px;
     grid-template-rows: 300px 300px 300px 300px;
-    /* grid-column-gap: 30px; */
-    grid-row-gap: 0;
   }
 
   /* Requirement 13 code here -- Do not remove this comment. */
